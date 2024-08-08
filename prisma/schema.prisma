@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id        Int      @id @default(auto()) @map("category_id")
+  name      String   @db.Text
+  dishes    Dish[]
+}
+
+model Dish {
+  id           Int      @id @default(auto()) @map("dish_id")
+  name         String   @db.Text
+  description  String   @db.Text
+  imageUrl     String   @db.Text
+  price        Int      @map("dish_price")
+  spiceLevel   String? @db.Text
+  category     Category @relation(fields: [categoryId], references: [id])
+  categoryId  Int
+  reservations Reservation[]
+}
+
+model Reservation {
+  id        Int      @id @default(auto()) @map("reservation_id")
+  date      String   @db.Text
+  time      String   @db.Text
+  guests    Int
+  name      String
+  email     String
+  phone     String?
+  dish      Dish     @relation(fields: [dishId], references: [id])
+  dishId    Int
+}

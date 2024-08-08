@@ -1,0 +1,7 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 30H110V10H10V30Z" fill="#F49500"/>
+<path d="M10 20H110V10H10V20Z" fill="#F4B400"/>
+<path d="M40 30H80V20H40V30Z" fill="#F4C400"/>
+<path d="M10 10H110V0H10V10Z" fill="#F4D400"/>
+<text x="50" y="25" textAnchor="middle" fontSize="20" fontWeight="bold" fill="white">Spice Odyssey</text>
+</svg>

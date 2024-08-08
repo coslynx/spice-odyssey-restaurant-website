@@ -1,0 +1,17 @@
+{
+  "hash": "89f16e062e086f34610b38ff723f382c51e338562155fa21935ab5e947068ab1",
+  "prisma": {
+    "clientVersion": "4.8.1"
+  },
+  "datamodel": "239306360806269740",
+  "dml": "557d9e383a4b8ff7d997984e0c93d990c377db5e8440cb563297f129589c1229",
+  "db": "postgresql",
+  "generator": {
+    "name": "client",
+    "provider": "prisma-client-js"
+  },
+  "generationInfo": {
+    "timestamp": 1683959696908,
+    "prismaVersion": "4.8.1"
+  }
+}
